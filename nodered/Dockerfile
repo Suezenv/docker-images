@@ -14,6 +14,4 @@ EXPOSE 1880
 ENV FLOWS=flows.json
 ENV NODE_PATH=/usr/src/node-red/node_modules:/data/node_modules
 
-WORKDIR /data
-
 CMD ["npm", "start", "--", "--userDir", "/data"]
