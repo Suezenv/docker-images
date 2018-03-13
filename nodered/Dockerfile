@@ -4,7 +4,7 @@ WORKDIR /data
 COPY package.json /data
 
 # Install nodered
-RUN npm install 
+RUN npm install -g 
 EXPOSE 1880
 
 # Environment variable holding file path for flows configuration
