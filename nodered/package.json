@@ -28,7 +28,13 @@
         "node-red-node-msgpack": "*",
         "node-red-node-base64": "*",
         "node-red-node-suncalc": "*",
-        "node-red-node-random": "*"
+        "node-red-node-random": "*",
+        "node-red-contrib-kafka-node": "*",
+        "node-red-contrib-influxdb": "*",
+        "node-red-node-mongodb": "*",
+        "node-red-contrib-cassandra": "*",
+        "node-red-contrib-zip": "*",
+        "node-red-contrib-azure-blob-storage-fix": "*"
     },
     "engines": {
         "node": "4.*.*"
