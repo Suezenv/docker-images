@@ -29,7 +29,7 @@
         "node-red-node-base64": "*",
         "node-red-node-suncalc": "*",
         "node-red-node-random": "*",
-        "node-red-contrib-kafka-node": "*",
+        "node-red-contrib-kafka-node-fix": "*",
         "node-red-contrib-influxdb": "*",
         "node-red-node-mongodb": "*",
         "node-red-contrib-cassandra": "*",
