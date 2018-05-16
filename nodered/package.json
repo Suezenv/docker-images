@@ -34,7 +34,10 @@
         "node-red-node-mongodb": "*",
         "node-red-contrib-cassandra": "*",
         "node-red-contrib-zip": "*",
-        "node-red-contrib-azure-blob-storage-fix": "*"
+        "node-red-contrib-azure-blob-storage-fix": "*",
+        "node-red-node-mysql": "*",
+        "node-red-contrib-sftp": "*",
+        "node-red-contrib-moment": "*"
     },
     "engines": {
         "node": "4.*.*"
