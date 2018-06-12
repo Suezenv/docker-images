@@ -1,5 +1,8 @@
 FROM mhart/alpine-node:8.9.4
 
+RUN apk update && \
+    apk add --no-cache git
+
 RUN mkdir -p /usr/src/node-red
 RUN mkdir /data
 
