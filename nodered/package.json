@@ -36,7 +36,7 @@
         "node-red-contrib-zip": "*",
         "node-red-contrib-azure-blob-storage-fix": "*",
         "node-red-node-mysql": "*",
-        "node-red-contrib-sftp": "*",
+        "node-red-contrib-ftp-sftp": "*",
         "node-red-contrib-moment": "*"
     },
     "engines": {
