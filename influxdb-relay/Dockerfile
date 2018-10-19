@@ -29,6 +29,8 @@ EXPOSE 9096
 COPY relay.toml /etc/relay.toml.tpl
 COPY run.sh /bin/
 
+RUN chmod a+x /bin/run.sh
+
 ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["/bin/run.sh"]
 
