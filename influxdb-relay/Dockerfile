@@ -4,7 +4,7 @@ MAINTAINER Nicolas Degory <ndegory@axway.com>
 #ENV INFLUXDB_VERSION 1.0.1
 
 RUN apk update && apk upgrade && \
-    apk --virtual build-deps add go>1.6 curl git gcc musl-dev make && \
+    apk --virtual build-deps add go>1.9 curl git gcc musl-dev make && \
     export GOPATH=/go && \
     go get -v github.com/influxdata/influxdb-relay && \
     cd $GOPATH/src/github.com/influxdata/influxdb-relay && \
