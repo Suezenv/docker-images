@@ -2,7 +2,7 @@
 name = "influxdb-http"
 bind-addr = "{{ HTTP_BIND_ADDR | default(":9096") }}"
 output = [
-    {% for key, value in environment('HTTP_BACKEND_') %}{ name = "{{ key }}", location = "http://{{ value }}/write", buffer-size-mb = {{ HTTP_BUFFER_SIZE_MB | default("0") }}, max-batch-kb = {{ HTTP_MAX_BATCH_KB | default("512") }}, max-delay-interval = "{{ HTTP_MAX_DELAY_INTERVAL | default("10s") }}" },
+    {% for key, value in environment('HTTP_BACKEND_') %}{ name = "{{ key }}", location = "http://{{ value }}/write", buffer-size-mb = {{ HTTP_BUFFER_SIZE_MB | default("0") }} },
 {% endfor %}
 ]
 

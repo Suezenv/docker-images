@@ -7,7 +7,7 @@ RUN apk add --update \
     python-dev \
     py-pip \
     build-base \
-  && pip install virtualenv \
+  && pip install virtualenv envtpl \
   && rm -rf /var/cache/apk/*
 
 RUN apk update && apk upgrade && \
