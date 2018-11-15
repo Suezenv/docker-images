@@ -39,6 +39,7 @@
         "node-red-contrib-ftp-sftp": "*",
         "node-red-contrib-sftp": "*",
         "node-red-contrib-moment": "*",
+        "node-red-contrib-objectid": "*",
         "winston": "^2.4.3"
     },
     "engines": {
