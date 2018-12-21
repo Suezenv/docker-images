@@ -40,6 +40,7 @@
         "node-red-contrib-sftp": "*",
         "node-red-contrib-moment": "*",
         "node-red-contrib-objectid": "*",
+        "node-red-contrib-data-tracer": "*",
         "winston": "^2.4.3"
     },
     "engines": {
