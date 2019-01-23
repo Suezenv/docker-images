@@ -9,7 +9,7 @@ RUN mkdir /data
 COPY package.json /usr/src/node-red/
 WORKDIR /usr/src/node-red
 
-# Install nodered
+# Install nodered \o/
 RUN npm install -g --production
 EXPOSE 1880
 
