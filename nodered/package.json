@@ -41,6 +41,7 @@
         "node-red-contrib-moment": "*",
         "node-red-contrib-objectid": "*",
         "node-red-contrib-data-tracer": "*",
+        "node-red-contrib-wait-paths": "*",
         "winston": "^2.4.3"
     },
     "engines": {
