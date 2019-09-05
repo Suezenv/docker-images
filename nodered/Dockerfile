@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:8.9.4
+FROM mhart/alpine-node:10.16.3
 
 RUN apk update && \
     apk add git
