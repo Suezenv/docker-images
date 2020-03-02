@@ -11,6 +11,6 @@ To build and release a new version of the image :
 ```
 $ cd mysql
 $ docker login docker.io
-$ docker build --tag suezenv/phpbu-mysql:5.2.7-10.3.16 .
-$ docker push suezenv/phpbu-mysql:5.2.7-10.3.16
+$ docker build --tag suezenv/phpbu-mysql:6.0.5-10.3.20 .
+$ docker push suezenv/phpbu-mysql:6.0.5-10.3.20
 ```
