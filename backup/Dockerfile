@@ -1,9 +1,9 @@
 FROM php:7.3.7-cli-alpine3.10
 
 RUN apk update && apk upgrade \
-    && wget https://phar.phpbu.de/phpbu-6.0.5.phar \
-    && chmod +x phpbu-6.0.5.phar \
-    && mv phpbu-6.0.5.phar /usr/local/bin/phpbu
+    && wget https://phar.phpbu.de/phpbu-6.0.14.phar \
+    && chmod +x phpbu-6.0.14.phar \
+    && mv phpbu-6.0.14.phar /usr/local/bin/phpbu
 
 WORKDIR /data
 
