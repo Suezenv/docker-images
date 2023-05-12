@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpbu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://schema.phpbu.de/5.2/phpbu.xsd">
+  <adapters>
+    <adapter type="env" name="environment" />
+  </adapters>
+  <backups>
+    <backup name="arangodb">
+      <source type="arangodump">
+        <option name="endpoint" value="adapter:environment:ARANGODB_ENDPOINT"/>
+        <option name="databases" value="adapter:environment:ARANGO_DB"/> 
+        <option name="username" value="adapter:environment:ARANGO_USER"/>
+        <option name="password" value="adapter:environment:ARANGO_PASSWORD"/>
+      </source>
+      <target dirname="/data/backup/arangodb" filename="arangodump-%Y%m%d-%H%i.sql" compress="gzip"/>
+      <sync type="azureblob">
+        <option name="connection_string" value="adapter:environment:BLOB_CONECTION_STRING" />
+        <option name="container_name" value="adapter:environment:BLOB_CONTAINER_NAME" />
+        <option name="path" value="arangodb" />
+        <option name="cleanup.type" value="quantity" />
+        <option name="cleanup.amount" value="7" />
+        <option name="hexBlob" value="true" />
+      </sync>
+      <cleanup type="quantity">
+        <option name="amount" value="10"/>
+      </cleanup>
+    </backup>
+  </backups>
+</phpbu>
+
+
+
