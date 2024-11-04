@@ -11,6 +11,6 @@ To build and release a new version of the image :
 ```
 $ cd postgresql
 $ docker login docker.io
-$ docker build --tag suezenv/phpbu-postgresql:6.0.14-11.10 .
-$ docker push suezenv/phpbu-postgresql:6.0.14-11.10
+$ docker build --tag suezenv/phpbu-postgresql:6.0.23-16.3 .
+$ docker push suezenv/phpbu-postgresql:6.0.23-16.3
 ```
