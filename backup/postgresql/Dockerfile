@@ -1,5 +1,5 @@
-FROM suezenv/phpbu:6.0.14
+FROM suezenv/phpbu:6.0.23
 
-RUN apk add postgresql-client=11.10-r0
+RUN apk add postgresql16-client=16.3-r0
 
 WORKDIR /data
