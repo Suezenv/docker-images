@@ -10,6 +10,6 @@ To build and release a new version of the image :
 
 ```
 $ docker login docker.io
-$ docker build --tag suezenv/phpbu:6.0.23 .
-$ docker push suezenv/phpbu:6.0.23
+$ docker build --tag suezenv/phpbu:6.0.31 .
+$ docker push suezenv/phpbu:6.0.31
 ```
